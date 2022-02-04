@@ -38,7 +38,7 @@ public class T5_RegistrationForm {
         String expectedPlaceHolder = "first name";
         String actualPlaceHolder = firstNameInput.getAttribute("placeholder");
 
-        if (expectedPlaceHolder.equals(expectedPlaceHolder)) {
+        if (expectedPlaceHolder.equals(actualPlaceHolder)) {
             System.out.println("Passed");
         }else{
             System.out.println("Failed");
