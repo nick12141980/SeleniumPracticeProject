@@ -43,6 +43,7 @@ public class T5_RegistrationForm {
         }else{
             System.out.println("Failed");
         }
+        driver.close();
 
 
     }
