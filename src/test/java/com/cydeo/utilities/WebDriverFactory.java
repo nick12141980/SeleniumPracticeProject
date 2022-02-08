@@ -22,7 +22,10 @@ public class WebDriverFactory {
              return new ChromeDriver();
         }else if (browserType.equalsIgnoreCase("firefox")){
             WebDriverManager.firefoxdriver().setup();
-           return new FirefoxDriver();
+            return new FirefoxDriver();
+        }else{
+            System.out.println("Given browser does not exist or not supported");
+            return null;
         }
     }
 }
