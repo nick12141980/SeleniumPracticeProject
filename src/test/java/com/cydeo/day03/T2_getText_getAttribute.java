@@ -49,7 +49,7 @@ public class T2_getText_getAttribute {
         String expectedInHref = "forgot_password=yes";
         String actualHrefAttribute = forgotYourPassword.getAttribute("href");
 
-        if (expectedInHref.equals(actualHrefAttribute)) {
+        if (expectedInHref.contains(actualHrefAttribute)) {
             System.out.println("Passed");
         }else{
             System.out.println("actualHrefAttribute = " + actualHrefAttribute);
