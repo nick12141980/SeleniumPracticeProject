@@ -45,6 +45,13 @@ public class T1_cssSelector_xpath {
         WebElement poweredByCydeoText = driver.findElement(By.xpath("//div[@style='text-align: center;']"));
 
         //4. Verify all web elements are displayed.
+        System.out.println("header1.isDisplayed() = " + header1.isDisplayed());
+        System.out.println("header1.isDisplayed() = " + header1.isDisplayed());
+        System.out.println("emailLabel.isDisplayed() = " + emailLabel.isDisplayed());
+        System.out.println("inputBox1.isDisplayed() = " + inputBox1.isDisplayed());
+        System.out.println("retrievePasswordButton.isDisplayed() = " + retrievePasswordButton.isDisplayed());
+        System.out.println("poweredByCydeoText.isDisplayed() = " + poweredByCydeoText.isDisplayed());
+
         //First solve the task with using cssSelector only. Try to create 2 different
         //cssSelector if possible
         //
