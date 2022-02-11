@@ -1,4 +1,4 @@
-package com.cydeo;
+package com.cydeo.day04_CSS_XPATH;
 
 import com.cydeo.utilities.WebDriverFactory;
 import org.openqa.selenium.By;
