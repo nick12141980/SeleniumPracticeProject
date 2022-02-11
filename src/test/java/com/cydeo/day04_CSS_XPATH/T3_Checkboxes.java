@@ -37,7 +37,7 @@ public class T3_Checkboxes {
         System.out.println("checkbox1.isSelected() expecting true = " + checkbox1.isSelected());
 
         //7. Confirm checkbox #2 is NOT selected.
-        System.out.println("checkbox2.isSelected() expecting true = " + checkbox2.isSelected());
+        System.out.println("checkbox2.isSelected() expecting false = " + checkbox2.isSelected());
     }
 
 }
