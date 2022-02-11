@@ -44,6 +44,8 @@ public class T1_cssSelector_xpath {
         //f. “Powered by Cydeo text
         WebElement poweredByCydeoText = driver.findElement(By.xpath("//div[@style='text-align: center;']"));
 
+        driver.quit();
+
         //4. Verify all web elements are displayed.
         System.out.println("header1.isDisplayed() = " + header1.isDisplayed());
         System.out.println("header1.isDisplayed() = " + header1.isDisplayed());
