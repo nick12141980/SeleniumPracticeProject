@@ -38,7 +38,12 @@ public class T1_cssSelector_xpath {
         WebElement inputBox2 = driver.findElement(By.xpath("//input[contains(@pattern,'a-z')]"));
 
         //e. “Retrieve password” button
+        // //button[@class='radius']
+        WebElement retrievePasswordButton = driver.findElement(By.xpath("//button[@id='form_submit']"));
+
         //f. “Powered by Cydeo text
+        WebElement poweredByCydeoText = driver.findElement(By.xpath("//div[@style='text-align: center;']"));
+
         //4. Verify all web elements are displayed.
         //First solve the task with using cssSelector only. Try to create 2 different
         //cssSelector if possible
