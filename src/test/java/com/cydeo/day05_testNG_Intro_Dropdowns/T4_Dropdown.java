@@ -33,7 +33,6 @@ public class T4_Dropdown {
     @Test
     public void simpleDropDownTest(){
 
-
         //3. Verify “Simple dropdown” default selected value is correct
         //Expected: “Please select an option”
         Select simpleDropdown = new Select(driver.findElement(By.xpath("//select[@id='dropdown']")));
