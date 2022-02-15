@@ -9,6 +9,11 @@ public class TestNG_Intro {
         System.out.println("BeforeClass is running...");
     }
 
+    @AfterClass
+    public void afterClassMethod(){
+        System.out.println("AfterClassMethod is running...");
+    }
+
     @BeforeMethod
     public void setUpMethod(){
         System.out.println("BeforeMethod is running...");
