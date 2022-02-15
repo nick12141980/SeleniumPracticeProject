@@ -1,11 +1,11 @@
 package com.cydeo.day05_testNG_Intro_Dropdowns;
 
-import org.testng.annotations.BeforeTest;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 public class TestNG_Intro {
 
-    @BeforeTest
+    @BeforeMethod
     public void setUpMethod(){
         System.out.println("BeforeMethod is running...");
     }
