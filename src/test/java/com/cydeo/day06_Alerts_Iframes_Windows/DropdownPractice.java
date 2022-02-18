@@ -60,7 +60,21 @@ public class DropdownPractice {
         //Select month using   : value attribute
         monthDropDown.selectByValue("11");
         //Select day using : index number
-        dayDropDown.selectByIndex(1);
+        dayDropDown.selectByIndex(0);
+
+        String expectedYear = "1923";
+        String expectedMonth = "December";
+        String expectedDay = "1";
+
+        String actualYear = yearDropDown.getFirstSelectedOption().getText();
+        String actualMonth = monthDropDown.getFirstSelectedOption().getText();
+        String actualDay = dayDropDown.getFirstSelectedOption().getText();
+
+        Assert.assertEquals(expectedYear, actualYear);
+        Assert.assertEquals(expectedMonth, actualMonth);
+        Assert.assertEquals(expectedDay, actualDay);
+
+
     }
 
 
