@@ -37,7 +37,7 @@ public class T1_AlertPractices {
         alert.accept();
 
         //5. Verify “You successfully clicked an alert” text is displayed.
-        WebElement resultText = driver.findElement(By.xpath("//p[@id='result"));
+        WebElement resultText = driver.findElement(By.xpath("//p[@id='result']"));
                                                             //Failure message
         Assert.assertTrue(resultText.isDisplayed(),"Result text is not displayed.");
 
