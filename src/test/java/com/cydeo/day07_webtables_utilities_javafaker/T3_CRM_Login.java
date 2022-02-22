@@ -1,6 +1,7 @@
 package com.cydeo.day07_webtables_utilities_javafaker;
 
 import com.cydeo.utilities.BrowserUtils;
+import com.cydeo.utilities.CRM_utilities;
 import com.cydeo.utilities.WebDriverFactory;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -53,6 +54,9 @@ public class T3_CRM_Login {
 
         //2. Go to : https://login1.nextbasecrm.com/
         driver.get(" https://login1.nextbasecrm.com/");
+
+        //calling utility method to log in helpdesk1
+        CRM_utilities.crm_login(driver);
 
         //6. Verify title is as expected:
         //Expected: Portal
