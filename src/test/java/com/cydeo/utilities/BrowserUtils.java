@@ -6,7 +6,7 @@ public class BrowserUtils {
         second *= 1000;
         try{
             Thread.sleep(second);
-        }catch (InterruptedException e)
+        }catch (InterruptedException e);
     }
 
 
