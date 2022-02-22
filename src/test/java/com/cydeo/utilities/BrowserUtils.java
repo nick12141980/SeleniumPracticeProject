@@ -17,9 +17,13 @@ public class BrowserUtils {
 
         }
     }
+
+    //This method accepts 3 arguments
 //• Arg1: WebDriver
 //• Arg2: String expectedInUrl
+    //If condition matches it will break the loop
 //• Arg3: String expectedTitle
+
     public static void switchWindowAndVerify(WebDriver driver, String expectedInUrl, String expectedInTitle){
 
         Set<String> allWindowHandles = driver.getWindowHandles();
