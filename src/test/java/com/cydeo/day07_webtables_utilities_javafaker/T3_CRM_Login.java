@@ -22,6 +22,7 @@ public class T3_CRM_Login {
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
     }
 
+    /*
     ////1. Create new test and make set ups
     @Test
     public void crmLoginTest(){
@@ -48,7 +49,7 @@ public class T3_CRM_Login {
         //Expected: Portal
         BrowserUtils.verifyTitle(driver,"Portal");
     }
-
+*/
     @Test
     public void crmLoginTest2(){
 
