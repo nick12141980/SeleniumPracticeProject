@@ -50,5 +50,6 @@ public class T1_WebtableOrderVerify {
     @Test
     public void test2(){
        String customerOrderDate1 = WebTableUtils.returnOrderDate(driver, "Ned Stark");
+        System.out.println("customerOrderDate1 = " + customerOrderDate1);
     }
 }
