@@ -1,4 +1,4 @@
-package com.cydeo.day08_properties_congig_reader;
+package com.cydeo.day08_properties_config_reader;
 
 import com.cydeo.utilities.WebDriverFactory;
 import com.cydeo.utilities.WebTableUtils;
@@ -51,5 +51,10 @@ public class T1_WebtableOrderVerify {
     public void test2(){
        String customerOrderDate1 = WebTableUtils.returnOrderDate(driver, "Ned Stark");
         System.out.println("customerOrderDate1 = " + customerOrderDate1);
+    }
+
+    @Test
+    public void test3(){
+        WebTableUtils.orderVerify(driver,"Alexandra Gray","04/15/2021");
     }
 }
