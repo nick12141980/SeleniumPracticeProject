@@ -1,6 +1,7 @@
 package com.cydeo.day08_properties_congig_reader;
 
 import com.cydeo.utilities.WebDriverFactory;
+import com.cydeo.utilities.WebTableUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -44,5 +45,10 @@ public class T1_WebtableOrderVerify {
         String actualDate = bobOrderDate.getText();
 
         Assert.assertEquals(expectedDate, actualDate);
+    }
+
+    @Test
+    public void test2(){
+       String customerOrderDate1 = WebTableUtils.returnOrderDate(driver, "Ned Stark");
     }
 }
