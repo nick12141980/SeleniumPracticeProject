@@ -1,5 +1,6 @@
 package com.cydeo.officeHour.practice03_02;
 
+import com.cydeo.utilities.BrowserUtils;
 import com.cydeo.utilities.CRM_utilities;
 import com.cydeo.utilities.ConfigurationReader;
 import com.cydeo.utilities.WebDriverFactory;
@@ -53,6 +54,7 @@ public class CRM_SendingMessages {
 
     @AfterMethod
     public  void tearDown(){
+        BrowserUtils.sleep(3);
         driver.quit();
     }
 
