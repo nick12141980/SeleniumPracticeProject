@@ -52,6 +52,18 @@ public class CRM_SendingMessages {
         Assert.assertEquals(feed.getText(),"Hello!","Message did not appear!");
     }
 
+    @Test
+    public void emptyMessageTest(){
+        //Users click the MESSAGE tab
+        driver.findElement(By.id("feed-add-post-form-tab-message")).click();
+        //        Users click the SEND button
+        driver.findElement(By.id("blog-submit-button-save")).click();
+
+        WebElement warningMessage = driver.findElement(By.xpath("//span[.='The message title is not specified']"));
+        Assert.assertEquals(warningMessage.getText(),"The message title is not specified","Warning message did not appeaf");
+
+    }
+
     @AfterMethod
     public  void tearDown(){
         BrowserUtils.sleep(3);
