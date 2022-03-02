@@ -33,22 +33,22 @@ public class CRM_SendingMessages {
 
     @Test
     public void sendMessageTest(){
-        driver.findElement(By.id("#feed-add-post-form-tab-message")).click();
+        //        Users are on the homepage
+//        Users click the MESSAGE tab
+        driver.findElement(By.id("feed-add-post-form-tab-message")).click();
 
-        driver.switchTo().frame(driver.findElement(By.cssSelector(".x-editor-iframe")));
+//        Users write test message
+        driver.switchTo().frame(driver.findElement(By.cssSelector(".bx-editor-iframe")));
+        WebElement msgFrame=driver.findElement(By.tagName("body"));
+        msgFrame.sendKeys("Hello!");
 
-        WebElement msgFrame = driver.findElement(By.tagName("body"));
-
-        msgFrame.sendKeys("Hello");
-
+//        Users click the SEND button
         driver.switchTo().defaultContent();
-
         driver.findElement(By.id("blog-submit-button-save")).click();
 
-        WebElement feed = driver.findElement(By.xpath("//div[starts-with(@id, 'blog_post_body')]"));
-
-        Assert.assertEquals(feed.getText(), "Hello","Message did not appear");
-
+//        Verify the message is displayed on the feed
+        WebElement feed= driver.findElement(By.xpath("//div[starts-with(@id,'blog_post_body')]"));
+        Assert.assertEquals(feed.getText(),"Hello!","Message did not appear!");
     }
 
     @AfterMethod
