@@ -26,7 +26,7 @@ public class CRM_AppreciationMsgTest {
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
-        driver.get(ConfigurationReader.getProperty("env"));
+        driver.get(ConfigurationReader.getProperty("en1"));
 
         CRM_utilities.crm_login(driver);
     }
