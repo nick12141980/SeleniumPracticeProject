@@ -20,15 +20,15 @@ public class Driver {
     private static WebDriver driver;
 
     //Creating a reusable utility method which will return the same driver instance when we call it
-    public static WebDriver getDriver(){
+    public static WebDriver getDriver() {
 
-        if (driver == null){
+        if (driver == null) {
 
             //Reading browser type from configuration.properties so we can control which browser is opened from outside
             //our code
             String browserType = ConfigurationReader.getProperty("browser");
 
-            switch (browserType){
+            switch (browserType) {
                 case "chrome":
                     WebDriverManager.chromedriver().setup();
                     driver = new ChromeDriver();
@@ -42,9 +42,10 @@ public class Driver {
                     driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
                     break;
             }
-        }else{
-            return driver;
         }
+        return driver;
+
+
 
 
     }
