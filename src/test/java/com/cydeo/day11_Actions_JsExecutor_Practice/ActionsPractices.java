@@ -2,6 +2,7 @@ package com.cydeo.day11_Actions_JsExecutor_Practice;
 
 import com.cydeo.utilities.Driver;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
@@ -21,6 +22,11 @@ public class ActionsPractices {
 
         //4- Scroll using Actions class “moveTo(element)” method
         actions.moveToElement(cydeoLinkBottom).perform();
+
+        //1- Continue from where the Task 4 is left in the same test.
+        //2- Scroll back up to “Home” link using PageUP button
+
+        actions.sendKeys(Keys.PAGE_UP, Keys.PAGE_UP).perform();
 
     }
 }
