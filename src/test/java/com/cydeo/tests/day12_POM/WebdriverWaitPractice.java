@@ -15,7 +15,7 @@ public class WebdriverWaitPractice {
         Driver.getDriver().get(" https://practice.cydeo.com/dynamic_loading/7");
 
         //2. Wait until title is “Dynamic title”
-        //ctreating the wait object to be able to create certain condition to wait
+        //creating the wait object to be able to create certain condition to wait
         WebDriverWait wait = new WebDriverWait(Driver.getDriver(), 10);
 
         //use wait to create expected condition
