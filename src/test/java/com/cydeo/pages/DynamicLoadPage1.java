@@ -2,6 +2,7 @@ package com.cydeo.pages;
 
 import com.cydeo.utilities.Driver;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
@@ -12,20 +13,20 @@ public class DynamicLoadPage1 {
     }
 
     @FindBy(xpath = "//button[.='Start']")
-    public WebDriver startButton;
+    public WebElement startButton;
 
     @FindBy(css = "div#loading")
-    public WebDriver loadingBar;
+    public WebElement loadingBar;
 
     @FindBy(css = "#username")
-    public WebDriver inputUsername;
+    public WebElement inputUsername;
 
     @FindBy(css = "#pwd")
-    public WebDriver inputPassword;
+    public WebElement inputPassword;
 
     @FindBy(xpath = "//button[.='Submit']")
-    public WebDriver submitButton;
+    public WebElement submitButton;
 
     @FindBy(id="flash")
-    public WebDriver errorMessage;
+    public WebElement errorMessage;
 }
