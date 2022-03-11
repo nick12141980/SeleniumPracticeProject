@@ -23,5 +23,8 @@ public class DynamicLoadPage1 {
     @FindBy(css = "#pwd")
     public WebDriver inputPassword;
 
+    @FindBy(xpath = "//button[.='Submit']")
+    public WebDriver submitButton;
+
 
 }
