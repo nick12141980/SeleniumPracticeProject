@@ -1,6 +1,7 @@
 package com.cydeo.tests.day12_POM;
 
 import com.cydeo.pages.DynamicLoad7Page;
+import com.cydeo.pages.DynamicLoadPage1;
 import com.cydeo.utilities.Driver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -29,5 +30,31 @@ public class WebdriverWaitPractice {
 
         //4. Assert: Image is displayed.
         Assert.assertTrue(dynamicLoad7Page.spongeBobImage.isDisplayed());
+    }
+
+    @Test
+    public void dynamic_load_1_test(){
+        //1. Go to https://practice.cydeo.com/dynamic_loading/1
+        Driver.getDriver().get("https://practice.cydeo.com/dynamic_loading/1");
+
+        DynamicLoadPage1 dynamicLoadPage1 = new DynamicLoadPage1();
+
+        //2. Click to start
+        dynamicLoadPage1.startButton.click();
+
+        //3. Wait until loading bar disappears
+        WebDriverWait wait = new WebDriverWait(Driver.getDriver(),10);
+        wait.until(ExpectedConditions.invisibilityOf(dynamicLoadPage1.loadingBar));
+
+        //4. Assert username inputbox is displayed
+
+        //5. Enter username: tomsmith
+
+        //6. Enter password: incorrectpassword
+
+        //7. Click to Submit button
+
+        //8. Assert “Your password is invalid!” text is displayed.
+
     }
 }
