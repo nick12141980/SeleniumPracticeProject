@@ -26,5 +26,6 @@ public class DynamicLoadPage1 {
     @FindBy(xpath = "//button[.='Submit']")
     public WebDriver submitButton;
 
-
+    @FindBy(id="flash")
+    public WebDriver errorMessage;
 }
