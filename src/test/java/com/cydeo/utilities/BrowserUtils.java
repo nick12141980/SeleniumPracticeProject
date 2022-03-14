@@ -53,7 +53,7 @@ public class BrowserUtils {
     }
 
     //utility method for Explicit wait
-    public static void waitForInvisibilityOff(WebElement webElement){
+    public static void waitForInvisibilityOf(WebElement webElement){
         Driver.getDriver().manage().timeouts().implicitlyWait(0, TimeUnit.SECONDS);
         WebDriverWait wait = new WebDriverWait(Driver.getDriver(),10);
         wait.until(ExpectedConditions.invisibilityOf(webElement));
