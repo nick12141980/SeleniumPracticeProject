@@ -7,7 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public class DynamicControlsPage {
 
-    public DynamicControlsPage){
+    public DynamicControlsPage{
         PageFactory.initElements(Driver.getDriver(), this);
     }
 
