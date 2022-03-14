@@ -23,10 +23,10 @@ public class DynamicControlsPage {
     @FindBy(css = "p[id='message']")
     public WebElement message;
 
-    @FindBy(xpath = "button[.='Enable']")
+    @FindBy(xpath = "//button[.='Enable']")
     public WebElement enableButton;
 
-    @FindBy(xpath = "//button[.='Enable']")
+    @FindBy(css = "input[type = 'text']")
     public WebElement inputBox;
 
 
