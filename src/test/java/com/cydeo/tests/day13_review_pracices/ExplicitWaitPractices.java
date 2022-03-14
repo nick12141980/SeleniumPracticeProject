@@ -46,4 +46,21 @@ public class ExplicitWaitPractices {
         Assert.assertTrue(dynamicControlsPage.message.isDisplayed());
         Assert.assertTrue(dynamicControlsPage.message.getText().equals("It's gone!"));
     }
+
+    @Test
+    public void enable_button_test(){
+        //3- Click to “Enable” button
+
+        dynamicControlsPage.enableButton.click();
+
+        //BrowserUtils.sleep(2);
+        //4- Wait until “loading bar disappears
+        BrowserUtils.waitForInvisibilityOf(dynamicControlsPage.loadingBar);
+        //5- Verify:
+        //a. Input box is enabled.
+        Assert.assertTrue(dynamicControlsPage.inputBox.isEnabled());
+
+        //b. “It’s enabled!” message is displayed.
+        Assert.assertTrue(dynamicControlsPage.message.getText().equals("It’s enabled!"));
+    }
 }
