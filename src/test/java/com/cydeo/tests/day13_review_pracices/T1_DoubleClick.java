@@ -27,7 +27,7 @@ public class T1_DoubleClick {
         System.out.println("doubleClickPage.textDoubleClick.getAttribute(\"style\") = "
                 + doubleClickPage.textDoubleClick.getAttribute("style"));
 
-        String actualStyleAttributeValue = doubleClickPage.textDoubleClick.getAttribute("style"));
+        String actualStyleAttributeValue = doubleClickPage.textDoubleClick.getAttribute("style");
         String expectedStyleAttributeValue = "red";
         Assert.assertTrue(actualStyleAttributeValue.contains(expectedStyleAttributeValue));
 
