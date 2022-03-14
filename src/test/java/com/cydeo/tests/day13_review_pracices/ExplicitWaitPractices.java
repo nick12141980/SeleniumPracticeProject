@@ -2,6 +2,7 @@ package com.cydeo.tests.day13_review_pracices;
 
 import com.cydeo.pages.DynamicControlsPage;
 import com.cydeo.utilities.Driver;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
@@ -30,7 +31,11 @@ public class ExplicitWaitPractices {
         //5- Verify:
         //a. Checkbox is not displayed
         //Assert.assertTrue(!dynamicControlsPage.checkbox.isDisplayed());
-        Assert.assertFalse(dynamicControlsPage.checkbox.isDisplayed());
+        try{
+            Assert.assertFalse(dynamicControlsPage.checkbox.isDisplayed());
+        }catch (NoSuchElementException e){
+            Assert.assertTrue(true);
+        }
 
         //b. “It’s gone!” message is displayed.
         Assert.assertTrue(dynamicControlsPage.message.isDisplayed());
