@@ -39,5 +39,6 @@ public class ExplicitWaitPractices {
 
         //b. “It’s gone!” message is displayed.
         Assert.assertTrue(dynamicControlsPage.message.isDisplayed());
+        Assert.assertTrue(dynamicControlsPage.message.getText().equals("It's gone!"));
     }
 }
