@@ -59,6 +59,7 @@ public class ExplicitWaitPractices {
         //5- Verify:
         //a. Input box is enabled.
         Assert.assertTrue(dynamicControlsPage.inputBox.isEnabled());
+        Assert.assertTrue(dynamicControlsPage.message.isDisplayed());
 
         //b. “It’s enabled!” message is displayed.
         Assert.assertTrue(dynamicControlsPage.message.getText().equals("It’s enabled!"));
